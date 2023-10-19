@@ -21,7 +21,7 @@ jobs:
       - name: Release (pre)
         uses: softprops/action-gh-release@v1
         with:
-          files: *.zip
+          files: "*.zip"
           prerelease: true
         if: contains(github.ref_name,'rc') && github.ref_type == 'tag'
       - name: Release
