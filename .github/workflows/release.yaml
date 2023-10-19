@@ -17,7 +17,7 @@ jobs:
       - name: Upload artifact
         with:
           name: zip
-          path: *.zip
+          path: "*.zip"
       - name: Release (pre)
         uses: softprops/action-gh-release@v1
         with:
