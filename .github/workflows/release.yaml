@@ -28,4 +28,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: "*.zip"
-        if: !contains(github.ref_name,'rc') && github.ref_type == 'tag'
+        if: "!contains(github.ref_name,'rc') && github.ref_type == 'tag'"
