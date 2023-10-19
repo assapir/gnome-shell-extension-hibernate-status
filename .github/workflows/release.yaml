@@ -13,7 +13,7 @@ jobs:
       - name: zip
         run: |
           sudo apt-get install make
-          make zip
+          make zip_file
       - name: Upload artifact
         uses: actions/upload-artifact@v3 
         with:
